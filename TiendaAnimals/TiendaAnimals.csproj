@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDEDFA07-991D-4EAA-9094-CE4628DACE7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TiendaAnimals</RootNamespace>
+    <AssemblyName>TiendaAnimals</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PrivateAssemblies\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Añadir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Añadir.Designer.cs">
+      <DependentUpon>Añadir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AñadirClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AñadirClientes.Designer.cs">
+      <DependentUpon>AñadirClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLIENTES.Designer.cs">
+      <DependentUpon>CLIENTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTARcompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTARcompras.Designer.cs">
+      <DependentUpon>CONSULTARcompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTARIOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTARIOS.Designer.cs">
+      <DependentUpon>INVENTARIOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar.Designer.cs">
+      <DependentUpon>Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarClientes.Designer.cs">
+      <DependentUpon>ModificarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINCIPAL.Designer.cs">
+      <DependentUpon>PRINCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tiendamascotasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tiendamascotasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS.Designer.cs">
+      <DependentUpon>VENTAS.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Añadir.resx">
+      <DependentUpon>Añadir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirClientes.resx">
+      <DependentUpon>AñadirClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLIENTES.resx">
+      <DependentUpon>CLIENTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTARcompras.resx">
+      <DependentUpon>CONSULTARcompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTARIOS.resx">
+      <DependentUpon>INVENTARIOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar.resx">
+      <DependentUpon>Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarClientes.resx">
+      <DependentUpon>ModificarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINCIPAL.resx">
+      <DependentUpon>PRINCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VENTAS.resx">
+      <DependentUpon>VENTAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tiendamascotasDataSet.xsc">
+      <DependentUpon>tiendamascotasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tiendamascotasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tiendamascotasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tiendamascotasDataSet.xss">
+      <DependentUpon>tiendamascotasDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiendaanimales.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiendaanimales1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telon-de-fondo-con-siluetas-de-huella-de-perro-o-de-gato-vector-animal-ilustracion-purpura-paw-via-patron-huellas-sin-fisuras-t1dhpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invenatruio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\127709390-fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-time-management-business-strategy-working-fast-illustration-png-image_4713697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c309.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c309o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4d4d4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TELON1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TELON2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
